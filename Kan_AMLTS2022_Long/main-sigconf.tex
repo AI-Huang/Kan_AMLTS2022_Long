@@ -296,7 +296,7 @@ Figure \ref{fig:pm25_all_iaqi_with_thresholds} shows the IAQI curves correspondi
 
 \begin{figure*}[!htbp]
     \begin{center}
-        \includegraphics[width=0.8\linewidth]{fig/iaqi/pm25_all_iaqi_with_thresholds.png}
+        \includegraphics[width=0.8\linewidth]{fig/data/iaqi/pm25_all_iaqi_with_thresholds.png}
     \end{center}
     \caption{All $PM_{2.5}$ data with IAQI thresholds.}
     \label{fig:pm25_all_iaqi_with_thresholds}
@@ -327,7 +327,7 @@ We firstly label by hand the level step down\/up points, and map them into risin
 
 \begin{figure*}[!htbp]
     \begin{center}
-        \includegraphics[width=0.8\linewidth]{fig/labeled_iaqi_level/origin_and_labeled/pm25_0.png}
+        \includegraphics[width=0.8\linewidth]{fig/data/labeled_iaqi_level/origin_and_labeled/pm25_0.png}
         \caption{Sensor 0's $PM_{2.5}$ origin and labeled IAQI level.}
         \label{fig:pm25_0_origin_and_labeled_level}
     \end{center}
@@ -341,7 +341,7 @@ Finally, the labeled target data is turned into a polygonal function. Dash lines
 
 \begin{figure*}[!htbp]
     \centering
-    \includegraphics[width=0.8\linewidth]{fig/labeled_iaqi_level/pm25_0_labeled_iaqi_level.png}
+    \includegraphics[width=0.8\linewidth]{fig/data/labeled_iaqi_level/pm25_0_labeled_iaqi_level.png}
     \caption{Sensor 0's labeled $PM_{2.5}$ IAQI level and its polygonal line.}
     \label{fig:pm25_0_labeled_level}
 \end{figure*}
@@ -555,14 +555,14 @@ Table \ref{table:best_metrics_myattention_training} shows the experimental best 
 % Evaluation curves
 \begin{figure*}[!htbp]
     \centering
-    \includegraphics[width=\linewidth]{fig/eval/model_eval_pm25_3_stride_5.png}
+    \includegraphics[width=\linewidth]{fig/results/evaluation/model_eval_pm25_3_stride_5.png}
     \caption{Evaluation of the GreenEyes model (\text{$PM_{2.5} (3)$}, stride=5).}
     \label{fig:model_eval_pm25_3_stride_5}
 \end{figure*}
 
 \begin{figure*}[!htbp]
     \centering
-    \includegraphics[width=\linewidth]{fig/eval/model_eval_pm25_3_stride_2.png}
+    \includegraphics[width=\linewidth]{fig/results/evaluation/model_eval_pm25_3_stride_2.png}
     \caption{Evaluation of the GreenEyes model (\text{$PM_{2.5} (3)$}, stride=10).}
     \label{fig:model_eval_pm25_3_stride_2}
 \end{figure*}
@@ -606,14 +606,14 @@ In order to validate the effectiveness of the modules, we conduct an ablation st
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.6\linewidth]{fig/ablation/wo-LSTM-training.png}
+    \includegraphics[width=0.6\linewidth]{fig/results/ablation/wo-LSTM-training.png}
     \caption{Model's (w/o LSTM) training plots (stride=10).}
     \label{fig:wo-LSTM-training}
 \end{figure}
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.6\linewidth]{fig/ablation/wo-LSTM-validation.png}
+    \includegraphics[width=0.6\linewidth]{fig/results/ablation/wo-LSTM-validation.png}
     \caption{Model's (w/o LSTM) validating plots (stride=10).}
     \label{fig:wo-LSTM-validation}
 \end{figure}
@@ -652,7 +652,7 @@ Being inspired by the SOTA ideas of predicting the target sequence with a short 
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\linewidth]{fig/ablation/window_size3600_train_mse.png}
+    \includegraphics[width=0.8\linewidth]{fig/results/ablation/window_size3600_train_mse.png}
     \caption{Window size 7200 vs 3600.}
     \label{fig:window_size3600_train_mse}
 \end{figure}
