@@ -10,6 +10,7 @@ To generate this symbol link under Windows:
 
 ```bat
 mklink /J .\CEUR-WS-Proceeding\fig .\Kan_AMLTS2022_Long\fig
+mklink /J .\AMLTS-CEUR-WS\fig .\Kan_AMLTS2022_Long\fig
 ```
 
 Under linux:
