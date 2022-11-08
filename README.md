@@ -9,14 +9,14 @@ Their is a un-synced symbol link `fig` under folder `CEUR-WS-Proceeding`, so tha
 To generate this symbol link under Windows:
 
 ```bat
-mklink /J .\CEUR-WS-Proceeding\fig .\Kan_AMLTS2022_Long\fig
 mklink /J .\AMLTS-CEUR-WS\fig .\Kan_AMLTS2022_Long\fig
 ```
 
 Under linux:
 
 ```bash
-TODO
+cd AMLTS-CEUR-WS
+ln -s ../Kan_AMLTS2022_Long/fig fig
 ```
 
 ## References

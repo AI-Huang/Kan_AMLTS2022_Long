@@ -54,7 +54,7 @@ url=https://ai-huang.github.io/,
 email=kaz321@lehigh.edu,
 url=https://www.kaizhang.us/,
 ]
-\address[2]{Lehigh University, 27 Memorial Dr W, Bethlehem, PA 18015, Bethlehem, United States}
+\address[2]{Lehigh University, 27 Memorial Dr W, Bethlehem, PA, United States}
 
 \author[3]{Ming Liu}[%
 email=eelium@ust.hk,
@@ -69,7 +69,7 @@ url=https://ram-lab.com/people/,
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  Accompanying rapid industrialization, humans are suffering from serious air pollution problems. The demand for air quality prediction is becoming more and more important to the government's policy-making and people's daily life. In this paper, We propose GreenEyes -- a deep neural network model, which consists of a WaveNet-based backbone block for learning representations of sequences and an LSTM with a Temporal Attention module for capturing the hidden interactions between features of multi-channel inputs. To evaluate the effectiveness of our proposed method, we carry out several experiments including an ablation study on our collected and preprocessed air quality data near HKUST. The experimental results show our model can effectively predict the air quality level of the next timestamp given any segment of the air quality data from the data set.
+  Accompanying rapid industrialization, humans are suffering from serious air pollution problems. The demand for air quality prediction is becoming more and more important to the government's policy-making and people's daily life. In this paper, We propose GreenEyes -- a deep neural network model, which consists of a WaveNet-based backbone block for learning representations of sequences and an LSTM with a Temporal Attention module for capturing the hidden interactions between features of multi-channel inputs. To evaluate the effectiveness of our proposed method, we carry out several experiments including an ablation study on our collected and preprocessed air quality data near HKUST. The experimental results show our model can effectively predict the air quality level of the next timestamp given any segment of the air quality data from the data set. We have also released our standalone dataset at \href{https://github.com/AI-Huang/IAQI_Dataset}{this URL}. The model and code for this paper are publicly available at \href{https://github.com/AI-Huang/AirEvaluation}{this URL}.
 \end{abstract}
 
 %%
@@ -402,7 +402,7 @@ After we train the model with Temporal Attention, we discovery that the results 
 Table \ref{table:best_metrics_myattention_training} shows the experimental best metrics during training with the proposed Temporal Attention. It is obvious that in most cases, our Attention outperforms the official Attention. We also define a coefficient $ratio=\frac{min(train\ MSE)}{min(validation\ MSE)}$ to simply measure the generalization capability of the model.
 %during certain an experiment.
 
-\begin{table}[!htbp]
+\begin{table}[!htbp]\footnotesize
     \centering
     \begin{tabular}{c|c|c|c|c}
         \hline\hline
@@ -502,7 +502,7 @@ It is easily concluded that, without the LSTM layer, the model runs into the ove
 
 In order to validate the Attention layer's function, we re-run the GreenEyes model with Temporal Attention on \text{$PM_{2.5}$(0)} to \text{$PM_{2.5}$(3)}, and then cut off this Attention layer and run the model again on the same data sets. Table \ref{table:myattention_vs_no_attention} shows the test MSE and MAE results of both configuration. It turns out that the model w/o Attention can perform better or is equivalent to the model applied with the Attention layer. However, by plotting the training curves again, we found that the model with the Temporal Attention layer can obtain smaller loss during training. 
 
-\begin{table}[!htbp]
+\begin{table}[!htbp]\footnotesize
     \centering
     \begin{tabular}{c|c|c|c|c|c}
     \hline\hline
